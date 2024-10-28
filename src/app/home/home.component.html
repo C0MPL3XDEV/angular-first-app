@@ -1,0 +1,19 @@
+<section class="content">
+  <form>
+    <input type="text" placeholder="Filter by city" #filter>
+    <button class="primary" type="button" (click)="filterResults(filter.value)">Search</button>
+  </form>
+
+  @if (filteredList.length === 0) {
+    <p
+      style="font-family: 'Poppins', sans-serif; font-weight: bold; color: red; font-size: 40px"
+    > No Housing Found In This Location! </p>
+  }
+
+  <section class="results">
+    <app-housing-location
+      *ngFor="let housingLocation of filteredList"
+      [housingLocation]="housingLocation"
+    ></app-housing-location>
+  </section>
+</section>

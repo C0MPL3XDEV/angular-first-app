@@ -1,0 +1,99 @@
+:host {
+  font-family: 'Poppins', sans-serif;
+}
+
+.listing-photo {
+  height: 400px;
+  width: 50%;
+  object-fit: cover;
+  border-radius: 30px;
+  float: right;
+  border: 2px solid #151517;
+}
+
+.listing-heading {
+  font-size: 48pt;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.listing-location::before {
+  content: url('/location-pin-svgrepo-com.svg') / '';
+}
+
+.listing-location {
+  font-size: 24pt;
+  margin-bottom: 15px;
+}
+
+.listing-features > .section-heading {
+  color: #151517;
+  font-size: 24pt;
+  margin-bottom: 15px;
+}
+
+.listing-features {
+  margin-bottom: 20px;
+}
+
+.listing-features li {
+  font-size: 14pt;
+}
+
+.listing-apply .section-heading {
+  font-size: 18pt;
+  margin-bottom: 15px;
+}
+
+.listing-apply {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 60vh;
+}
+
+form {
+  width: 100%;
+  max-width: 500px;
+}
+
+label, input {
+  display: block;
+}
+
+label {
+  color: #151517;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 12pt;
+}
+
+input {
+  font-size: 16pt;
+  margin-bottom: 15px;
+  padding: 10px;
+  width: 400px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: solid .3px;
+}
+
+
+@media (max-width: 1024px) {
+  .listing-photo {
+    width: 100%;
+    height: 400px;
+  }
+}
+
+
+.primary {
+  padding: 10px;
+  font-family: 'Poppins', sans-serif;
+  background: #151517;
+  color: white;
+  border-radius: 10px;
+  border: 2px solid #151517;
+}
